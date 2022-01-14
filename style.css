@@ -146,6 +146,7 @@ header {
 
 main p {
   letter-spacing: 0.1rem;
+  line-height: 1.5rem;
   text-align: justify;
   text-justify: inter-ideograph;
 }
@@ -185,6 +186,7 @@ nav ul li a:hover {
 
 main {
   display: flex;
+  flex-wrap: wrap;
 }
 
 section.left,
@@ -201,6 +203,7 @@ section.right {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1 1 250px;
 }
 
 section.right p {
@@ -209,4 +212,72 @@ section.right p {
 
 .active {
   color: white;
+}
+
+section.left {
+  flex: 4 1 350px;
+}
+
+#curve_chart {
+  width: 100%;
+  height: 80%;
+}
+
+@media screen and (max-width: 650px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #curve_chart {
+    width: 100%;
+    height: 40%;
+  }
+}
+
+/*----agriculture--------------------------*/
+main section.agricultureMain {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  line-height: 1.5rem;
+}
+
+main section.agricultureMain ol {
+  padding-left: 1rem;
+  list-style-type: decimal;
+}
+
+main section.agricultureMain h3 {
+  padding-top: 2rem;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 1000;
+}
+
+main section p.agricultureFormula {
+  text-align: center;
+  color: red;
+  font-weight: 1000;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+/*----industralization--------------------------*/
+main section.industralizationMain {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  line-height: 1.5rem;
+}
+
+main section.industralizationMain h3 {
+  padding-top: 2rem;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 1000;
+}
+
+main section.industralizationMain div.Flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
