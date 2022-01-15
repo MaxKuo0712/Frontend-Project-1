@@ -1,4 +1,13 @@
 @charset "UTF-8";
+/*
+1. nested CSSS
+2. variables
+3. self &
+4. import
+  (1) 分類
+  (2) 重複利用
+5. mixin
+*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -135,7 +144,7 @@ html {
 
 @font-face {
   font-family: "myfont";
-  src: url(./清松手寫體1.ttf);
+  src: url(../清松手寫體1.ttf);
 }
 
 * {

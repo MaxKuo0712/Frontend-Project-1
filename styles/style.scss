@@ -1,126 +1,19 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/*
+1. nested CSSS
+2. variables
+3. self &
+4. import
+  (1) 分類
+  (2) 重複利用
+5. mixin
 */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+@import "./cssRrset";
+
+@mixin flexbox {
+  display: flex;
 }
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+
 /*--------------------------------------------------------------*/
 html {
   scroll-behavior: smooth;
@@ -128,7 +21,7 @@ html {
 
 @font-face {
   font-family: "myfont";
-  src: url(./清松手寫體1.ttf);
+  src: url(../清松手寫體1.ttf);
 }
 
 * {
@@ -167,11 +60,11 @@ nav {
 }
 
 nav ul {
-  display: flex;
+  @include flexbox;
 }
 
 nav ul li {
-  display: flex;
+  @include flexbox;
 }
 
 nav ul li a {
@@ -194,7 +87,7 @@ nav ul li a:hover {
 }
 
 main {
-  display: flex;
+  @include flexbox;
   flex-wrap: wrap;
 }
 
@@ -209,7 +102,7 @@ section.right h4 {
 }
 
 section.right {
-  display: flex;
+  @include flexbox;
   flex-direction: column;
   align-items: center;
   flex: 1 1 250px;
@@ -286,7 +179,7 @@ main section.industralizationMain h3 {
 }
 
 main section.industralizationMain div.Flex {
-  display: flex;
+  @include flexbox;
   flex-direction: row;
   flex-wrap: wrap;
 }
