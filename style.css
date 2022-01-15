@@ -126,9 +126,14 @@ html {
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: "myfont";
+  src: url(./清松手寫體1.ttf);
+}
+
 * {
   box-sizing: border-box;
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: "myfont", sans-serif;
 }
 
 h1,
