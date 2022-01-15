@@ -142,6 +142,11 @@ html {
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: "myfont";
+  src: url(../清松手寫體1.ttf);
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
