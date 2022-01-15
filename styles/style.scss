@@ -19,10 +19,10 @@ html {
   scroll-behavior: smooth;
 }
 
-@font-face {
-  font-family: "myfont";
-  src: url(../清松手寫體1.ttf);
-}
+// @font-face {
+//   font-family: "myfont";
+//   src: url(../清松手寫體1.ttf);
+// }
 
 * {
   box-sizing: border-box;
@@ -178,8 +178,43 @@ main section.industralizationMain h3 {
   font-weight: 1000;
 }
 
+main section.industralizationMain div.flex p {
+  display: block;
+}
+
 main section.industralizationMain div.Flex {
   @include flexbox;
-  flex-direction: row;
-  flex-wrap: wrap;
+  padding-top: 3rem;
+}
+
+main section.industralizationMain div.Flex p.left {
+  padding-left: 3rem;
+  padding-right: 1.5rem;
+}
+
+main section.industralizationMain div.Flex p.right {
+  padding-left: 1.5rem;
+  padding-right: 3rem;
+}
+/*----author-------------------------*/
+.authorMain {
+  @include flexbox();
+  flex-wrap: nowrap;
+}
+
+.myPicture {
+  width: 25vh;
+  height: 25vh;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.authorMain {
+  padding-top: 1.5rem;
+}
+
+.authorMainLeft,
+.authorMainRight {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }

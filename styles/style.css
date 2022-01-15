@@ -142,11 +142,6 @@ html {
   scroll-behavior: smooth;
 }
 
-@font-face {
-  font-family: "myfont";
-  src: url(../清松手寫體1.ttf);
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -327,15 +322,50 @@ main section.industralizationMain h3 {
   font-weight: 1000;
 }
 
+main section.industralizationMain div.flex p {
+  display: block;
+}
+
 main section.industralizationMain div.Flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  padding-top: 3rem;
+}
+
+main section.industralizationMain div.Flex p.left {
+  padding-left: 3rem;
+  padding-right: 1.5rem;
+}
+
+main section.industralizationMain div.Flex p.right {
+  padding-left: 1.5rem;
+  padding-right: 3rem;
+}
+
+/*----author-------------------------*/
+.authorMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.myPicture {
+  width: 25vh;
+  height: 25vh;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.authorMain {
+  padding-top: 1.5rem;
+}
+
+.authorMainLeft,
+.authorMainRight {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
